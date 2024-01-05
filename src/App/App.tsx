@@ -49,6 +49,7 @@ const App = () => {
     let winner = false
     for (const playerId in players) {
       const player = players[playerId]
+      // eslint-disable-next-line
       winCombinations.forEach((winCombination: Array<number>) => {
         if (gameState.fields[winCombination[0]].value === player.marking && 
           gameState.fields[winCombination[1]].value === player.marking && 
@@ -59,6 +60,7 @@ const App = () => {
           setGameStatus(player.title + " heeft gewonnen!")
 
           /* Update Score */
+          winner = true
           const updatedPlayers = {
             ...players,
             [playerId]: {
@@ -67,8 +69,6 @@ const App = () => {
             }
           }
           setPlayers(updatedPlayers)
-
-          winner = true
         }
       })
     }
@@ -91,9 +91,10 @@ const App = () => {
     })
   }
 
-  /* Check for a winner or a draw everytime "gameState" updates */
+  /* Check for a winner or a draw (if there is no winner) everytime "gameState" updates */
   useEffect(() => {
     if (checkForWinner() === false) {checkForDraw()}
+    // eslint-disable-next-line
   }, [gameState])
 
   return (
