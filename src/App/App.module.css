@@ -1,0 +1,29 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.game_status {
+    display: flex;
+    align-items: center;
+    padding: 1rem 10rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+.game_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.restart {
+    margin-left: 2rem;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}

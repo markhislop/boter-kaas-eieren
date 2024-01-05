@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marking {
+    font-size: 150px;
+    text-shadow: 2px 2px black;
+}

@@ -1,0 +1,58 @@
+:root {
+    --gameboard-border-color: rgb(30,30,30)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.813);
+    padding: 50px;
+    cursor: pointer;
+}
+.container > div {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+}
+.container > div:nth-child(1) {
+    border-right: 5px solid var(--gameboard-border-color);
+    border-bottom: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(2) {
+    border-right: 5px solid var(--gameboard-border-color);
+    border-bottom: 5px solid var(--gameboard-border-color);
+    border-top: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(3) {
+    border-right: 5px solid var(--gameboard-border-color);
+    border-top: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(4) {
+    border-right: 5px solid var(--gameboard-border-color);
+    border-bottom: 5px solid var(--gameboard-border-color);
+    border-left: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(5) {
+    border: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(6) {
+    border-right: 5px solid var(--gameboard-border-color);
+    border-top: 5px solid var(--gameboard-border-color);
+    border-left: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(7) {
+    border-bottom: 5px solid var(--gameboard-border-color);
+    border-left: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(8) {
+    border-top: 5px solid var(--gameboard-border-color);
+    border-bottom: 5px solid var(--gameboard-border-color);
+    border-left: 5px solid var(--gameboard-border-color);
+}
+.container > div:nth-child(9) {
+    border-top: 5px solid var(--gameboard-border-color);
+    border-left: 5px solid var(--gameboard-border-color);
+}
