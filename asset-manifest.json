@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/boter-kaas-eieren/static/css/main.43bc8019.css",
+    "main.js": "/boter-kaas-eieren/static/js/main.0f01c639.js",
+    "index.html": "/boter-kaas-eieren/index.html",
+    "main.43bc8019.css.map": "/boter-kaas-eieren/static/css/main.43bc8019.css.map",
+    "main.0f01c639.js.map": "/boter-kaas-eieren/static/js/main.0f01c639.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43bc8019.css",
+    "static/js/main.0f01c639.js"
+  ]
+}
